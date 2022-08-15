@@ -169,3 +169,61 @@ a {
   text-decoration: none;
   transition: 0.3s;
 }
+
+/* Header */
+
+#header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.main-header {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.site-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu__list {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+
+.header-menu__list-link {
+  color: var(--color-text-meta);
+}
+
+.header-menu__list-link:hover {
+  color: var(--color-primary);
+}
+
+.active > .header-menu__list-link {
+  font-weight: 700;
+  color: var(--color-primary);
+  position: relative;
+}
+.active > .header-menu__list-link::after {
+  content: url(../icons/acive-menu-line.svg);
+  position: absolute;
+  right: 50%;
+  top: 60%;
+  height: 0;
+}
