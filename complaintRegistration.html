@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>تسجيل الشكاوى</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main id="main-content" class="complaintRegistration-page">
+      <div
+        class="complaint-hero"
+        style="background-image: url(images/Banner.png)"
+      >
+        <div class="complaint-hero__overlay">
+          <h1 class="complaint-title">تسجيل الشكاوی</h1>
+        </div>
+      </div>
+      <div class="complaint-content">
+        <div class="complaint-content__form">
+          <p class="title-complaint">
+            إذا كانت لديك شكوى بشأن لآراد برندينك، فأكمل هذا النموذج وأرسله.
+          </p>
+          <form action="#" class="form">
+            <div class="form__row">
+              <div class="form__col">
+                <input
+                  type="text"
+                  name="topic"
+                  id="topic"
+                  placeholder="الاسم و اللقب"
+                />
+              </div>
+              <div class="form__col">
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  placeholder="متحرک"
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__col">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="موضوع"
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__col">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="10"
+                  class="form__label"
+                  placeholder="نص الرسالة"
+                ></textarea>
+              </div>
+            </div>
+            <button class="btn btn--primary form__submit" type="submit">
+              ارسال
+            </button>
+          </form>
+        </div>
+        <div class="img">
+          <img src="images/Picture.png" alt="" />
+        </div>
+      </div>
+    </main>
+    >
+    <footer></footer>
+  </body>
+</html>
